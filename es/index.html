@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="description" content="TabSaver - Potente herramienta de gestión de pestañas entre dispositivos para Chrome. La sincronización en tiempo real, búsqueda inteligente y operaciones por lotes hacen que tu experiencia de navegación sea fluida y eficiente.">
+    <meta name="keywords" content="TabSaver, extensión de Chrome, gestión de pestañas, sincronización entre dispositivos, pestañas del navegador, sincronización de pestañas, gestor de pestañas, complemento de Chrome">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="TabSaver">
+    <meta name="language" content="es">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tab-saver.vercel.app/es">
+    <meta property="og:title" content="TabSaver - Herramienta inteligente de gestión de pestañas entre dispositivos">
+    <meta property="og:description" content="Gestiona y sincroniza tus pestañas de Chrome sin esfuerzo entre dispositivos. Mejora tu eficiencia de navegación.">
+    <meta property="og:image" content="https://tab-saver.vercel.app/images/TabSaver-index-dark.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tab-saver.vercel.app/es">
+    <meta property="twitter:title" content="TabSaver - Herramienta inteligente de gestión de pestañas entre dispositivos">
+    <meta property="twitter:description" content="Gestiona y sincroniza tus pestañas de Chrome sin esfuerzo entre dispositivos. Mejora tu eficiencia de navegación.">
+    <meta property="twitter:image" content="https://tab-saver.vercel.app/images/TabSaver-index-dark.png">
+
+    <title>TabSaver - Gestión de pestañas entre dispositivos y sincronización en tiempo real | Extensión de Chrome</title>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icon16.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TabSaver",
+      "operatingSystem": "Chrome",
+      "applicationCategory": "BrowserExtension",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Herramienta de gestión de pestañas de Chrome entre dispositivos que ofrece sincronización en tiempo real, búsqueda inteligente y acciones por lotes.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "100"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <img src="../images/logo.png" alt="TabSaver Logo" class="logo-img" loading="lazy">
+                <span class="logo-text">TabSaver</span>
+            </div>
+            <div class="nav-links" role="menubar">
+                <a href="#features" role="menuitem" data-i18n="nav.features">Características</a>
+                <a href="#demo" role="menuitem" data-i18n="nav.demo">Demo</a>
+                <a href="#faq" role="menuitem" data-i18n="nav.faq">Preguntas frecuentes</a>
+                <a href="https://github.com/3sheng/TabSaver" target="_blank" rel="noopener" role="menuitem" class="github-link" data-i18n="nav.github">
+                    <span class="material-icons">code</span>
+                    <span>GitHub</span>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" role="button">
+                    <span class="material-icons theme-icon-dark">dark_mode</span>
+                    <span class="material-icons theme-icon-light">light_mode</span>
+                </button>
+                <div class="language-selector">
+                    <button class="language-btn" aria-label="Select language">
+                        <span class="material-icons">language</span>
+                        <span class="current-language">ES</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="../" data-lang="en">English</a>
+                        <a href="../zh" data-lang="zh">中文</a>
+                        <a href="./" data-lang="es" class="active">Español</a>
+                        <a href="../ar" data-lang="ar">العربية</a>
+                        <a href="../pt" data-lang="pt">Português</a>
+                        <a href="../bn" data-lang="bn">বাংলা</a>
+                        <a href="../ja" data-lang="ja">日本語</a>
+                        <a href="../de" data-lang="de">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://chromewebstore.google.com/detail/tab-saver-manage-and-real/pellfjigmagbpcngbhabkjemohoijndi" class="install-btn" target="_blank" rel="noopener" role="button" data-i18n="nav.install">Agregar a Chrome</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero.title">Gestión de pestañas sin esfuerzo en todos tus dispositivos</h1>
+                <p class="hero-text" data-i18n="hero.subtitle">TabSaver te ayuda a gestionar, sincronizar y organizar tus pestañas del navegador sin esfuerzo en múltiples dispositivos.</p>
+                <div class="hero-buttons">
+                    <a href="https://chromewebstore.google.com/detail/tab-saver-manage-and-real/pellfjigmagbpcngbhabkjemohoijndi" class="primary-btn" target="_blank" rel="noopener" role="button" data-i18n="hero.cta">Instalar ahora</a>
+                    <a href="#demo" class="secondary-btn" role="button" data-i18n="hero.demo">Ver demo</a>
+                </div>
+                <div class="hero-image" role="region" aria-label="Capturas de pantalla del producto">
+                    <div class="image-slider" role="group" aria-label="Slider de capturas de pantalla">
+                        <img src="../images/TabSaver-index-dark.png" alt="TabSaver Dark Theme - Interfaz principal con características de gestión y sincronización de pestañas" class="slider-image active" loading="lazy">
+                        <img src="../images/TabSaver-index-light.png" alt="TabSaver Light Theme - Interfaz de organización de pestañas limpia e intuitiva" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-index-device.png" alt="TabSaver Selección de dispositivo - Interfaz de sincronización entre dispositivos" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-settings-dark.png" alt="TabSaver Configuración Dark Mode - Opciones de configuración avanzadas y personalización" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-settings-light.png" alt="TabSaver Configuración Light Mode - Interfaz de gestión de configuración amigable" class="slider-image" loading="lazy">
+                    </div>
+                    <div class="slider-dots" role="tablist" aria-label="Navegación del slider">
+                        <span class="dot active" role="tab" aria-selected="true" aria-label="Slide 1"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 2"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 3"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 4"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 5"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 data-i18n="features.title">Características clave</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">sync</span>
+                        </div>
+                        <h3 data-i18n="features.sync.title">Sincronización entre dispositivos</h3>
+                        <p data-i18n="features.sync.desc">Sincroniza tus pestañas sin esfuerzo en todos tus dispositivos en tiempo real.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">search</span>
+                        </div>
+                        <h3 data-i18n="features.search.title">Búsqueda inteligente</h3>
+                        <p data-i18n="features.search.desc">Encuentra cualquier pestaña rápidamente con nuestra función de búsqueda potente.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">library_add_check</span>
+                        </div>
+                        <h3 data-i18n="features.batch.title">Operaciones por lotes</h3>
+                        <p data-i18n="features.batch.desc">Gestiona múltiples pestañas de manera eficiente con nuestras acciones por lotes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">palette</span>
+                        </div>
+                        <h3 data-i18n="features.theme.title">Soporte de temas</h3>
+                        <p data-i18n="features.theme.desc">Elige entre temas claros, oscuros o del sistema para adaptarte a tus preferencias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <div class="container">
+                <h2 data-i18n="demo.title">Ver TabSaver en acción</h2>
+                <div class="video-container">
+                    <iframe width="560" height="500" src="https://www.youtube.com/embed/1oCyeyMCUF0?si=gOb4keouoWCESuaC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item" data-i18n="faq.whatIsTabsaver">
+                        <div class="faq-header">
+                            <h3 class="question">¿Qué es TabSaver?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">TabSaver es una potente extensión de Chrome diseñada para revolucionar tu experiencia de gestión de pestañas. Te permite:</p>
+                            <ul class="features">
+                                <li>Sincronizar pestañas entre dispositivos</li>
+                                <li>Guardar y organizar tus pestañas del navegador</li>
+                                <li>Acceder a tus pestañas desde cualquier dispositivo con Chrome</li>
+                                <li>Buscar entre tus pestañas guardadas rápidamente</li>
+                                <li>Gestionar pestañas con una interfaz intuitiva</li>
+                            </ul>
+                            <p class="conclusion">Ya seas estudiante, profesional o usuario casual, TabSaver te ayuda a mantenerte organizado y productivo manteniendo tus pestañas importantes a solo un clic de distancia.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.isTabsaverFree">
+                        <div class="faq-header">
+                            <h3 class="question">¿Es gratuito TabSaver?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">Sí, TabSaver es completamente gratuito. Creemos en hacer que la gestión eficiente de pestañas esté al alcance de todos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.howSecureIsMyData">
+                        <div class="faq-header">
+                            <h3 class="question">¿Cómo se protege mi datos?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">Tu datos se sincronizan de manera segura utilizando el sistema de sincronización de Chrome. No almacenamos datos personales en nuestros servidores, garantizando tu privacidad y seguridad.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.whichBrowsersAreSupported">
+                        <div class="faq-header">
+                            <h3 class="question">¿Qué navegadores son compatibles?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">Actualmente, TabSaver está disponible para Google Chrome. Estamos trabajando en llevar TabSaver a otros navegadores en el futuro.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.howDoIGetStarted">
+                        <div class="faq-header">
+                            <h3 class="question">¿Cómo comienzo?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">Simplemente instala TabSaver desde la tienda de Chrome y estás listo para empezar. La extensión sincronizará tus pestañas entre dispositivos cuando estés conectado a Chrome.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.whatHappensToMyTabs">
+                        <div class="faq-header">
+                            <h3 class="question">¿Qué pasa con mis pestañas guardadas si desinstalo?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">Tus pestañas guardadas se almacenan en el almacenamiento de sincronización de Chrome. Si desinstalas y luego reinstalas TabSaver, tus datos seguirán disponibles siempre y cuando estés utilizando la misma cuenta de Google.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.canICustomize">
+                        <div class="faq-header">
+                            <h3 class="question">¿Puedo personalizar la apariencia?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">Sí. TabSaver admite temas claros y oscuros, y puede adaptarse automáticamente a tus preferencias del sistema. Puedes cambiar el tema en la página de opciones de la extensión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TabSaver Logo" class="logo-img" loading="lazy">
+                    <span class="logo-text">TabSaver</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features" data-i18n="footer.features">Características</a>
+                    <a href="#demo" data-i18n="footer.demo">Demo</a>
+                    <a href="#faq" data-i18n="footer.faq">Preguntas frecuentes</a>
+                    <a href="https://github.com/3sheng/TabSaver/issues" target="_blank" data-i18n="footer.feedback">Comentarios</a>
+                    <a href="https://buymeacoffee.com/3sheng" target="_blank" data-i18n="footer.buyMeACoffee">Invítame un café</a>
+                </div>
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">&copy; 2024 TabSaver. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

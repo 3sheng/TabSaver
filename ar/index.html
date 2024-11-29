@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="description" content="TabSaver - أداة قوية لإدارة علامات التبويب عبر الأجهزة لمتصفح Chrome. المزامنة في الوقت الفعلي والبحث الذكي والعمليات المجمعة تجعل تجربة التصفح سلسة وفعالة.">
+    <meta name="keywords" content="TabSaver, إضافة Chrome, إدارة علامات التبويب, مزامنة عبر الأجهزة, علامات تبويب المتصفح, مزامنة علامات التبويب, مدير علامات التبويب, إضافة Chrome">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="TabSaver">
+    <meta name="language" content="ar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tab-saver.vercel.app/ar">
+    <meta property="og:title" content="TabSaver - أداة ذكية لإدارة علامات التبويب عبر الأجهزة">
+    <meta property="og:description" content="قم بإدارة ومزامنة علامات تبويب Chrome عبر الأجهزة بسهولة. عزز كفاءة التصفح لديك.">
+    <meta property="og:image" content="https://tab-saver.vercel.app/images/TabSaver-index-dark.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tab-saver.vercel.app/ar">
+    <meta property="twitter:title" content="TabSaver - أداة ذكية لإدارة علامات التبويب عبر الأجهزة">
+    <meta property="twitter:description" content="قم بإدارة ومزامنة علامات تبويب Chrome عبر الأجهزة بسهولة. عزز كفاءة التصفح لديك.">
+    <meta property="twitter:image" content="https://tab-saver.vercel.app/images/TabSaver-index-dark.png">
+
+    <title>TabSaver - إدارة علامات التبويب عبر الأجهزة ومزامنة علامات التبويب في الوقت الفعلي | إضافة Chrome</title>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icon16.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TabSaver",
+      "operatingSystem": "Chrome",
+      "applicationCategory": "BrowserExtension",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "أداة إدارة علامات تبويب Chrome عبر الأجهزة التي توفر المزامنة في الوقت الفعلي والبحث الذكي والإجراءات المجمعة.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "100"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <img src="../images/logo.png" alt="TabSaver Logo" class="logo-img" loading="lazy">
+                <span class="logo-text">TabSaver</span>
+            </div>
+            <div class="nav-links" role="menubar">
+                <a href="#features" role="menuitem" data-i18n="nav.features">المميزات</a>
+                <a href="#demo" role="menuitem" data-i18n="nav.demo">العرض التوضيحي</a>
+                <a href="#faq" role="menuitem" data-i18n="nav.faq">الأسئلة الشائعة</a>
+                <a href="https://github.com/3sheng/TabSaver" target="_blank" rel="noopener" role="menuitem" class="github-link" data-i18n="nav.github">
+                    <span class="material-icons">code</span>
+                    <span>GitHub</span>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle dark mode" role="button">
+                    <span class="material-icons theme-icon-dark">dark_mode</span>
+                    <span class="material-icons theme-icon-light">light_mode</span>
+                </button>
+                <div class="language-selector">
+                    <button class="language-btn" aria-label="Select language">
+                        <span class="material-icons">language</span>
+                        <span class="current-language">AR</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="../" data-lang="en">English</a>
+                        <a href="../zh" data-lang="zh">中文</a>
+                        <a href="../es" data-lang="es">Español</a>
+                        <a href="./" data-lang="ar" class="active">العربية</a>
+                        <a href="../pt" data-lang="pt">Português</a>
+                        <a href="../bn" data-lang="bn">বাংলা</a>
+                        <a href="../ja" data-lang="ja">日本語</a>
+                        <a href="../de" data-lang="de">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://chromewebstore.google.com/detail/tab-saver-manage-and-real/pellfjigmagbpcngbhabkjemohoijndi" class="install-btn" target="_blank" rel="noopener" role="button" data-i18n="nav.install">إضافة إلى Chrome</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero.title">إدارة سلسة لعلامات التبويب عبر جميع أجهزتك</h1>
+                <p class="hero-text" data-i18n="hero.subtitle">يساعدك TabSaver في إدارة ومزامنة وتنظيم علامات تبويب المتصفح بسهولة عبر أجهزة متعددة.</p>
+                <div class="hero-buttons">
+                    <a href="https://chromewebstore.google.com/detail/tab-saver-manage-and-real/pellfjigmagbpcngbhabkjemohoijndi" class="primary-btn" target="_blank" rel="noopener" role="button" data-i18n="hero.cta">تثبيت الآن</a>
+                    <a href="#demo" class="secondary-btn" role="button" data-i18n="hero.demo">مشاهدة العرض</a>
+                </div>
+                <div class="hero-image" role="region" aria-label="Product screenshots">
+                    <div class="image-slider" role="group" aria-label="Screenshot slider">
+                        <img src="../images/TabSaver-index-dark.png" alt="TabSaver Dark Theme - Main interface with tab management and sync features" class="slider-image active" loading="lazy">
+                        <img src="../images/TabSaver-index-light.png" alt="TabSaver Light Theme - Clean and intuitive tab organization interface" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-index-device.png" alt="TabSaver Device Selection - Cross-device synchronization interface" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-settings-dark.png" alt="TabSaver Settings Dark Mode - Advanced configuration and customization options" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-settings-light.png" alt="TabSaver Settings Light Mode - User-friendly settings management interface" class="slider-image" loading="lazy">
+                    </div>
+                    <div class="slider-dots" role="tablist" aria-label="Slider navigation">
+                        <span class="dot active" role="tab" aria-selected="true" aria-label="Slide 1"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 2"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 3"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 4"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 5"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 data-i18n="features.title">المميزات الرئيسية</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">sync</span>
+                        </div>
+                        <h3 data-i18n="features.sync.title">مزامنة عبر الأجهزة</h3>
+                        <p data-i18n="features.sync.desc">مزامنة علامات التبويب بسلاسة عبر جميع أجهزتك في الوقت الفعلي.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">search</span>
+                        </div>
+                        <h3 data-i18n="features.search.title">بحث ذكي</h3>
+                        <p data-i18n="features.search.desc">ابحث عن أي علامة تبويب بسرعة باستخدام وظائف البحث القوية.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">library_add_check</span>
+                        </div>
+                        <h3 data-i18n="features.batch.title">عمليات متعددة</h3>
+                        <p data-i18n="features.batch.desc">إدارة علامات تبويب متعددة في وقت واحد بكفاءة.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">palette</span>
+                        </div>
+                        <h3 data-i18n="features.theme.title">دعم السمات</h3>
+                        <p data-i18n="features.theme.desc">اختر بين السمة الفاتحة أو الداكنة أو سمة النظام لتناسب تفضيلاتك.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <div class="container">
+                <h2 data-i18n="demo.title">شاهد TabSaver في العمل</h2>
+                <div class="video-container">
+                    <iframe width="560" height="500" src="https://www.youtube.com/embed/1oCyeyMCUF0?si=gOb4keouoWCESuaC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 data-i18n="faq.title">الأسئلة المتكررة</h2>
+                <div class="faq-grid">
+                    <div class="faq-item" data-i18n="faq.whatIsTabsaver">
+                        <div class="faq-header">
+                            <h3 class="question">ما هو TabSaver؟</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">TabSaver هو امتداد Chrome القوي المصمم لتحويل تجربة إدارة علامات التبويب الخاصة بك. يسمح لك ب:</p>
+                            <ul class="features">
+                                <li>مزامنة علامات التبويب عبر أجهزة متعددة</li>
+                                <li>حفظ وتنظيم علامات تبويب المتصفح</li>
+                                <li>الوصول إلى علامات التبويب الخاصة بك من أي جهاز مع Chrome</li>
+                                <li>البحث السريع في علامات التبويب المحفوظة</li>
+                                <li>استخدام واجهة بديهية لإدارة التبويب</li>
+                            </ul>
+                            <p class="conclusion">سواء كنت طالبًا أو محترفًا أو مستخدمًا عاديًا للمتصفح، يساعدك TabSaver في الحفاظ على تنظيمك وفعاليتك من خلال الحفاظ على علامات التبويب المهمة في متناول يدك.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.isTabsaverFree">
+                        <div class="faq-header">
+                            <h3 class="question">هل TabSaver مجاني؟</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">نعم، TabSaver مجاني تمامًا للاستخدام. نؤمن في جعل إدارة علامات التبويب الفعالة متاحة للجميع.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.howSecureIsMyData">
+                        <div class="faq-header">
+                            <h3 class="question">ما مدى أمان بياناتي؟</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">بياناتك آمنة تمامًا من خلال نظام المزامنة المدمج في Chrome. لا نخزن أي بيانات شخصية على خوادمنا، مما يضمن خصوصيتك وأمانك.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.whichBrowsersAreSupported">
+                        <div class="faq-header">
+                            <h3 class="question">أي المتصفحات مدعومة؟</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">يتم دعم TabSaver حاليًا لمتصفح Google Chrome. نحن نعمل على جلب TabSaver إلى المتصفحات الأخرى في المستقبل.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.howDoIGetStarted">
+                        <div class="faq-header">
+                            <h3 class="question">كيف أبدأ؟</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">ببساطة قم بتثبيت TabSaver من متجر Chrome Web Store وستكون جاهزًا للبدء! سيتم مزامنة علامات التبويب تلقائيًا عبر الأجهزة عند تسجيل الدخول إلى Chrome.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.whatHappensToMyTabs">
+                        <div class="faq-header">
+                            <h3 class="question">ماذا يحدث لعلامات التبويب المحفوظة إذا قمت بإلغاء التثبيت؟</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">علامات التبويب المحفوظة مخزنة في مخزن المزامنة الخاص بChrome. إذا قمت بإلغاء التثبيت وثم أعادته في وقت لاحق، سيظل بياناتك متاحة طالما كنت تستخدم نفس حساب Google.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.canICustomize">
+                        <div class="faq-header">
+                            <h3 class="question">هل يمكنني تخصيص المظهر؟</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">نعم! يدعم TabSaver أسلوبي الضوء والغامق، ويمكنه تلقائيًا مطابقة تفضيلات نظامك. يمكنك تغيير الأسلوب في صفحة خيارات الامتداد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TabSaver Logo" class="logo-img" loading="lazy">
+                    <span class="logo-text">TabSaver</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features" data-i18n="footer.features">المميزات</a>
+                    <a href="#demo" data-i18n="footer.demo">العرض التوضيحي</a>
+                    <a href="#faq" data-i18n="footer.faq">الأسئلة الشائعة</a>
+                    <a href="https://github.com/3sheng/TabSaver/issues" target="_blank" data-i18n="footer.feedback">الملاحظات</a>
+                    <a href="https://buymeacoffee.com/3sheng" target="_blank" data-i18n="footer.buyMeACoffee">اشترِ لي قهوة</a>
+                </div>
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 TabSaver. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

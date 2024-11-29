@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="description" content="TabSaver - Chrome-এর জন্য শক্তিশালী ক্রস-ডিভাইস ট্যাব ম্যানেজমেন্ট টুল। রিয়েল-টাইম সিঙ্ক, স্মার্ট সার্চ এবং ব্যাচ অপারেশন আপনার ব্রাউজিং অভিজ্ঞতাকে নির্বিঘ্ন এবং দক্ষ করে তোলে।">
+    <meta name="keywords" content="TabSaver, Chrome এক্সটেনশন, ট্যাব ম্যানেজমেন্ট, ক্রস-ডিভাইস সিঙ্ক, ব্রাউজার ট্যাব, ট্যাব সিঙ্ক্রোনাইজেশন, ট্যাব ম্যানেজার, Chrome প্লাগইন">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="TabSaver">
+    <meta name="language" content="bn">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tab-saver.vercel.app/bn">
+    <meta property="og:title" content="TabSaver - স্মার্ট ক্রস-ডিভাইস ট্যাব ম্যানেজমেন্ট টুল">
+    <meta property="og:description" content="সহজে আপনার Chrome ট্যাবগুলি ডিভাইসগুলির মধ্যে ম্যানেজ এবং সিঙ্ক করুন। আপনার ব্রাউজিং দক্ষতা বাড়ান।">
+    <meta property="og:image" content="https://tab-saver.vercel.app/images/TabSaver-index-dark.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tab-saver.vercel.app/bn">
+    <meta property="twitter:title" content="TabSaver - স্মার্ট ক্রস-ডিভাইস ট্যাব ম্যানেজমেন্ট টুল">
+    <meta property="twitter:description" content="সহজে আপনার Chrome ট্যাবগুলি ডিভাইসগুলির মধ্যে ম্যানেজ এবং সিঙ্ক করুন। আপনার ব্রাউজিং দক্ষতা বাড়ান।">
+    <meta property="twitter:image" content="https://tab-saver.vercel.app/images/TabSaver-index-dark.png">
+
+    <title>TabSaver - ক্রস-ডিভাইস ট্যাব ম্যানেজমেন্ট এবং রিয়েল-টাইম ট্যাব সিঙ্ক | Chrome এক্সটেনশন</title>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icon16.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TabSaver",
+      "operatingSystem": "Chrome",
+      "applicationCategory": "BrowserExtension",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "বিভিন্ন ডিভাইসের জন্য Chrome ট্যাব ম্যানেজমেন্ট টুল যা রিয়েল-টাইম সিঙ্ক, স্মার্ট সার্চ এবং ব্যাচ অ্যাকশন প্রদান করে।",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "100"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container" role="navigation" aria-label="মূল নেভিগেশন">
+            <div class="logo">
+                <img src="../images/logo.png" alt="TabSaver লোগো" class="logo-img" loading="lazy">
+                <span class="logo-text">TabSaver</span>
+            </div>
+            <div class="nav-links" role="menubar">
+                <a href="#features" role="menuitem" data-i18n="nav.features">বৈশিষ্ট্য</a>
+                <a href="#demo" role="menuitem" data-i18n="nav.demo">ডেমো</a>
+                <a href="#faq" role="menuitem" data-i18n="nav.faq">প্রশ্নোত্তর</a>
+                <a href="https://github.com/3sheng/TabSaver" target="_blank" rel="noopener" role="menuitem" class="github-link" data-i18n="nav.github">
+                    <span class="material-icons">code</span>
+                    <span>GitHub</span>
+                </a>
+                <button class="theme-toggle" aria-label="ডার্ক মোড টগল করুন" role="button">
+                    <span class="material-icons theme-icon-dark">dark_mode</span>
+                    <span class="material-icons theme-icon-light">light_mode</span>
+                </button>
+                <div class="language-selector">
+                    <button class="language-btn" aria-label="ভাষা নির্বাচন করুন">
+                        <span class="material-icons">language</span>
+                        <span class="current-language">BN</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="../" data-lang="en">English</a>
+                        <a href="../zh" data-lang="zh">中文</a>
+                        <a href="../es" data-lang="es">Español</a>
+                        <a href="../ar" data-lang="ar">العربية</a>
+                        <a href="../pt" data-lang="pt">Português</a>
+                        <a href="./" data-lang="bn" class="active">বাংলা</a>
+                        <a href="../ja" data-lang="ja">日本語</a>
+                        <a href="../de" data-lang="de">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://chromewebstore.google.com/detail/tab-saver-manage-and-real/pellfjigmagbpcngbhabkjemohoijndi" class="install-btn" target="_blank" rel="noopener" role="button" data-i18n="nav.install">Chrome-এ যোগ করুন</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero.title">আপনার সমস্ত ডিভাইসে নির্বিঘ্ন ট্যাব ম্যানেজমেন্ট</h1>
+                <p class="hero-text" data-i18n="hero.subtitle">TabSaver আপনাকে একাধিক ডিভাইসে আপনার ব্রাউজার ট্যাবগুলি সহজে ম্যানেজ, সিঙ্ক এবং সংগঠিত করতে সাহায্য করে।</p>
+                <div class="hero-buttons">
+                    <a href="https://chromewebstore.google.com/detail/tab-saver-manage-and-real/pellfjigmagbpcngbhabkjemohoijndi" class="primary-btn" target="_blank" rel="noopener" role="button" data-i18n="hero.cta">এখনই ইনস্টল করুন</a>
+                    <a href="#demo" class="secondary-btn" role="button" data-i18n="hero.demo">ডেমো দেখুন</a>
+                </div>
+                <div class="hero-image" role="region" aria-label="প্রোডাক্ট স্ক্রিনশট">
+                    <div class="image-slider" role="group" aria-label="স্ক্রিনশট স্লাইডার">
+                        <img src="../images/TabSaver-index-dark.png" alt="TabSaver ডার্ক থিম - ট্যাব ম্যানেজমেন্ট এবং সিঙ্ক বৈশিষ্ট্যসহ মূল ইন্টারফেস" class="slider-image active" loading="lazy">
+                        <img src="../images/TabSaver-index-light.png" alt="TabSaver লাইট থিম - পরিষ্কার এবং সহজবোধ্য ট্যাব সংগঠন ইন্টারফেস" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-index-device.png" alt="TabSaver Device Selection - Cross-device synchronization interface" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-settings-dark.png" alt="TabSaver Settings Dark Mode - Advanced configuration and customization options" class="slider-image" loading="lazy">
+                        <img src="../images/TabSaver-settings-light.png" alt="TabSaver Settings Light Mode - User-friendly settings management interface" class="slider-image" loading="lazy">
+                    </div>
+                    <div class="slider-dots" role="tablist" aria-label="Slider navigation">
+                        <span class="dot active" role="tab" aria-selected="true" aria-label="Slide 1"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 2"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 3"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 4"></span>
+                        <span class="dot" role="tab" aria-selected="false" aria-label="Slide 5"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 data-i18n="features.title">মূল বৈশিষ্ট্য</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">sync</span>
+                        </div>
+                        <h3 data-i18n="features.sync.title">ক্রস-ডিভাইস সিঙ্ক</h3>
+                        <p data-i18n="features.sync.desc">রিয়েল-টাইমে আপনার সমস্ত ডিভাইসে ট্যাবগুলি নির্বিঘ্নে সিঙ্ক করুন।</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">search</span>
+                        </div>
+                        <h3 data-i18n="features.search.title">স্মার্ট সার্চ</h3>
+                        <p data-i18n="features.search.desc">শক্তিশালী সার্চ ফাংশনালিটি দিয়ে দ্রুত যেকোনো ট্যাব খুঁজে নিন।</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">library_add_check</span>
+                        </div>
+                        <h3 data-i18n="features.batch.title">ব্যাচ অপারেশন</h3>
+                        <p data-i18n="features.batch.desc">ব্যাচ অ্যাকশন দিয়ে একসাথে একাধিক ট্যাব দক্ষতার সাথে ম্যানেজ করুন।</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">palette</span>
+                        </div>
+                        <h3 data-i18n="features.theme.title">থিম সাপোর্ট</h3>
+                        <p data-i18n="features.theme.desc">আপনার পছন্দ অনুযায়ী লাইট, ডার্ক বা সিস্টেম থিমের মধ্যে থেকে বেছে নিন।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <div class="container">
+                <h2 data-i18n="demo.title">TabSaver কীভাবে কাজ করে দেখুন</h2>
+                <div class="video-container">
+                    <iframe width="560" height="500" src="https://www.youtube.com/embed/1oCyeyMCUF0?si=gOb4keouoWCESuaC" title="YouTube ভিডিও প্লেয়ার" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 data-i18n="faq.title">সাধারণ জিজ্ঞাসা</h2>
+                <div class="faq-grid">
+                    <div class="faq-item" data-i18n="faq.whatIsTabsaver">
+                        <div class="faq-header">
+                            <h3 class="question">TabSaver কী?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">TabSaver হল একটি Chrome এক্সটেনশন যা আপনার ব্রাউজিং অভিজ্ঞতাকে আরও সহজ এবং দক্ষ করে তোলে। এটি আপনাকে নিম্নলিখিত বৈশিষ্ট্যগুলি প্রদান করে:</p>
+                            <ul class="features">
+                                <li>একাধিক ডিভাইসে ট্যাব সিঙ্ক্রোনাইজেশন</li>
+                                <li>ব্রাউজার ট্যাব সংরক্ষণ এবং সংগঠন</li>
+                                <li>Chrome সহ যেকোনো ডিভাইস থেকে আপনার ট্যাবগুলি অ্যাক্সেস</li>
+                                <li>সংরক্ষিত ট্যাবগুলিতে দ্রুত অনুসন্ধান</li>
+                                <li>সহজবোধ্য ইন্টারফেস দিয়ে ট্যাব ম্যানেজমেন্ট</li>
+                            </ul>
+                            <p class="conclusion">আপনি ছাত্র, পেশাদার বা সাধারণ ব্রাউজার ব্যবহারকারী যাই হোন না কেন, TabSaver আপনার গুরুত্বপূর্ণ ট্যাবগুলি হাতের নাগালে রেখে আপনাকে সংগঠিত এবং দক্ষ থাকতে সাহায্য করে।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.isTabsaverFree">
+                        <div class="faq-header">
+                            <h3 class="question">TabSaver কি বিনামূল্যে?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">হ্যাঁ, TabSaver সম্পূর্ণ বিনামূল্যে! আপনি Chrome ওয়েব স্টোর থেকে বিনামূল্যে ডাউনলোড এবং ব্যবহার করতে পারেন। কোনো প্রিমিয়াম বৈশিষ্ট্য বা গোপন খরচ নেই।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.howSecureIsMyData">
+                        <div class="faq-header">
+                            <h3 class="question">আমার ডেটা কতটা নিরাপদ?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">আপনার ডেটা Chrome-এর বিল্ট-ইন সিঙ্ক সিস্টেম ব্যবহার করে নিরাপদে সিঙ্ক্রোনাইজ করা হয়। আমরা আমাদের সার্ভারে কোনো ব্যক্তিগত ডেটা সংরক্ষণ করি না, যা আপনার গোপনীয়তা এবং নিরাপত্তা নিশ্চিত করে।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.canICustomize">
+                        <div class="faq-header">
+                            <h3 class="question">আমি কি অ্যাপিয়ারেন্স কাস্টমাইজ করতে পারি?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">হ্যাঁ, TabSaver লাইট এবং ডার্ক মোড উভয়ই সমর্থন করে। আপনি আপনার পছন্দ অনুযায়ী থিম পরিবর্তন করতে পারেন অথবা সিস্টেম থিমের সাথে সিঙ্ক করতে পারেন।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.whichBrowsersAreSupported">
+                        <div class="faq-header">
+                            <h3 class="question">কোন ব্রাউজারগুলি সমর্থিত?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">বর্তমানে, TabSaver শুধুমাত্র Google Chrome-এর জন্য উপলব্ধ। আমরা ভবিষ্যতে অন্যান্য ব্রাউজারে TabSaver নিয়ে আসার জন্য কাজ করছি।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.howDoIGetStarted">
+                        <div class="faq-header">
+                            <h3 class="question">আমি কীভাবে শুরু করব?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">শুধু Chrome ওয়েব স্টোর থেকে TabSaver ইনস্টল করুন এবং আপনি শুরু করতে প্রস্তুত! আপনি Chrome-এ সাইন ইন থাকলে এক্সটেনশনটি স্বয়ংক্রিয়ভাবে আপনার ট্যাবগুলি ডিভাইসগুলির মধ্যে সিঙ্ক করবে।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-i18n="faq.whatHappensToMyTabs">
+                        <div class="faq-header">
+                            <h3 class="question">আনইনস্টল করলে আমার সংরক্ষিত ট্যাবগুলির কী হবে?</h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                        </div>
+                        <div class="faq-content">
+                            <p class="answer">আপনার সংরক্ষিত ট্যাবগুলি Chrome-এর সিঙ্ক স্টোরেজে সংরক্ষিত থাকে। আপনি যদি আনইনস্টল করেন এবং পরে TabSaver পুনরায় ইনস্টল করেন, আপনি একই Google অ্যাকাউন্ট ব্যবহার করছেন যতক্ষণ আপনার ডেটা এখনও উপলব্ধ থাকবে।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TabSaver লোগো" class="logo-img" loading="lazy">
+                    <span class="logo-text">TabSaver</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features" data-i18n="footer.features">বৈশিষ্ট্য</a>
+                    <a href="#demo" data-i18n="footer.demo">ডেমো</a>
+                    <a href="#faq" data-i18n="footer.faq">প্রশ্নোত্তর</a>
+                    <a href="https://github.com/3sheng/TabSaver/issues" target="_blank" data-i18n="footer.feedback">প্রতিক্রিয়া</a>
+                    <a href="https://buymeacoffee.com/3sheng" target="_blank" data-i18n="footer.buyMeACoffee">আমাকে একটি কফি কিনে দিন</a>
+                </div>
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright"> 2024 TabSaver। সর্বস্বত্ব সংরক্ষিত।</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
