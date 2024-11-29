@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tab-saver.vercel.app/sitemap.xml

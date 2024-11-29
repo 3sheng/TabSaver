@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English version -->
+  <url>
+    <loc>https://tab-saver.vercel.app/</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://tab-saver.vercel.app/#features</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/#features"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/#features"/>
+  </url>
+  <url>
+    <loc>https://tab-saver.vercel.app/#demo</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/#demo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/#demo"/>
+  </url>
+  <url>
+    <loc>https://tab-saver.vercel.app/#faq</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/#faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/#faq"/>
+  </url>
+  
+  <!-- Chinese version -->
+  <url>
+    <loc>https://tab-saver.vercel.app/zh/</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/"/>
+  </url>
+  <url>
+    <loc>https://tab-saver.vercel.app/zh/#features</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/#features"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/#features"/>
+  </url>
+  <url>
+    <loc>https://tab-saver.vercel.app/zh/#demo</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/#demo"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/#demo"/>
+  </url>
+  <url>
+    <loc>https://tab-saver.vercel.app/zh/#faq</loc>
+    <lastmod>2024-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tab-saver.vercel.app/#faq"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tab-saver.vercel.app/zh/#faq"/>
+  </url>
+</urlset>
